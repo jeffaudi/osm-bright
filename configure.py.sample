@@ -14,15 +14,15 @@ config["name"] = "OSM Bright"
 
 # The absolute path to your MapBox projects directory. You should 
 # not need to change this unless you have configured TileMill specially
-config["path"] = path.expanduser("~/Documents/MapBox/project")
+config["path"] = path.expanduser("/usr/local/share/maps/style")
 
 # PostGIS connection setup
 # Leave empty for Mapnik defaults. The only required parameter is dbname.
 config["postgis"]["host"]     = ""
 config["postgis"]["port"]     = ""
-config["postgis"]["dbname"]   = "osm"
-config["postgis"]["user"]     = ""
-config["postgis"]["password"] = ""
+config["postgis"]["dbname"]   = "gis"
+config["postgis"]["user"]     = "osm"
+config["postgis"]["password"] = "osm"
 
 # Increase performance if you are only rendering a particular area by
 # specifying a bounding box to restrict queries. Format is "XMIN,YMIN,XMAX,YMAX"
