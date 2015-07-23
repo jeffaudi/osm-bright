@@ -13,31 +13,32 @@
 #land-low[zoom>=0][zoom<10],
 #land-high[zoom>=10] {
   line-color: @land;
+  polygon-opacity: 0;
   polygon-gamma: 0.75;
 }
 
 #landuse_gen0[zoom>3][zoom<=9],
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
-  [type='cemetery']      { line-color: @cemetery; }
-  [type='college']       { line-color: @school; }
-  [type='commercial']    { line-color: @industrial; }
-  [type='common']        { line-color: @park; }
-  [type='forest']        { line-color: @wooded; }
-  [type='golf_course']   { line-color: @sports; }
-  [type='grass']         { line-color: @grass; }
-  [type='hospital']      { line-color: @hospital; }
-  [type='industrial']    { line-color: @industrial; }
-  [type='park']          { line-color: @park; }
-  [type='parking']       { line-color: @parking; }
-  [type='pedestrian']    { line-color: @pedestrian_fill; }
-  [type='pitch']         { line-color: @sports; }
-  [type='residential']   { line-color: @residential; }
-  [type='school']        { line-color: @school; }
-  [type='sports_center'] { line-color: @sports; }
-  [type='stadium']       { line-color: @sports; }
-  [type='university']    { line-color: @school; }
-  [type='wood']          { line-color: @wooded; }
+  [type='cemetery']      { polygon-opacity: 0; line-color: @cemetery; }
+  [type='college']       { polygon-opacity: 0; line-color: @school; }
+  [type='commercial']    { polygon-opacity: 0; line-color: @industrial; }
+  [type='common']        { polygon-opacity: 0; line-color: @park; }
+  [type='forest']        { polygon-opacity: 0; line-color: @wooded; }
+  [type='golf_course']   { polygon-opacity: 0; line-color: @sports; }
+  [type='grass']         { polygon-opacity: 0; line-color: @grass; }
+  [type='hospital']      { polygon-opacity: 0; line-color: @hospital; }
+  [type='industrial']    { polygon-opacity: 0; line-color: @industrial; }
+  [type='park']          { polygon-opacity: 0; line-color: @park; }
+  [type='parking']       { polygon-opacity: 0; line-color: @parking; }
+  [type='pedestrian']    { polygon-opacity: 0; line-color: @pedestrian_fill; }
+  [type='pitch']         { polygon-opacity: 0; line-color: @sports; }
+  [type='residential']   { polygon-opacity: 0; line-color: @residential; }
+  [type='school']        { polygon-opacity: 0; line-color: @school; }
+  [type='sports_center'] { polygon-opacity: 0; line-color: @sports; }
+  [type='stadium']       { polygon-opacity: 0; line-color: @sports; }
+  [type='university']    { polygon-opacity: 0; line-color: @school; }
+  [type='wood']          { polygon-opacity: 0; line-color: @wooded; }
 }
 
 #landuse_overlays[type='nature_reserve'][zoom>6] {
