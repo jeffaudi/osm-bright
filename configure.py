@@ -14,15 +14,15 @@ config["name"] = "OSM Bright"
 
 # The absolute path to your MapBox projects directory. You should 
 # not need to change this unless you have configured TileMill specially
-config["path"] = path.expanduser("~/Documents/MapBox/project")
+config["path"] = path.expanduser("/usr/local/share/maps/style")
 
 # PostGIS connection setup
 # Leave empty for Mapnik defaults. The only required parameter is dbname.
 config["postgis"]["host"]     = ""
 config["postgis"]["port"]     = ""
-config["postgis"]["dbname"]   = "osm"
-config["postgis"]["user"]     = ""
-config["postgis"]["password"] = ""
+config["postgis"]["dbname"]   = "gis"
+config["postgis"]["user"]     = "osm"
+config["postgis"]["password"] = "osm"
 
 # Increase performance if you are only rendering a particular area by
 # specifying a bounding box to restrict queries. Format is "XMIN,YMIN,XMAX,YMAX"
@@ -38,5 +38,6 @@ config["postgis"]["extent"] = "-20037508.34,-20037508.34,20037508.34,20037508.34
 # - http://data.openstreetmapdata.com/simplified-land-polygons-complete-3857.zip
 # - http://data.openstreetmapdata.com/land-polygons-split-3857.zip
 
-config["land-high"] = path.join(getcwd(),"shp/land-polygons-split-3857/land_polygons.shp")
-config["land-low"] = path.join(getcwd(),"shp/simplified-land-polygons-complete-3857/simplified_land_polygons.shp")
+config["land-high"] = path.join(getcwd(),"../shp/land-polygons-split-3857/land_polygons.shp")
+config["land-low"] = path.join(getcwd(),"../shp/simplified-land-polygons-complete-3857/simplified_land_polygons.shp")
+
