@@ -10,15 +10,6 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-#land-low[zoom>=7][zoom<10],
-#land-high[zoom>=10] {
-  line-color: @land;
-  polygon-opacity: 0;
-  polygon-gamma: 0.75;
-}
-
-#landuse_gen0[zoom>7][zoom<=9],
-#landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
   [type='cemetery']      { polygon-opacity: 0; line-color: @cemetery; }
   [type='college']       { polygon-opacity: 0; line-color: @school; }
@@ -164,7 +155,6 @@ Map { background-color: transparent; }
 #admin[admin_level='2'][zoom>1] {
   line-color:@admin_2;
   line-width:1;
-  line-dasharray: 10, 3, 2, 3;
 }
 
 /* ================================================================== */
