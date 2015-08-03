@@ -91,7 +91,7 @@
 
 Map { background-color: transparent; }
 
-#water_gen0[zoom>3][zoom<=9],
+#water_gen0[zoom>7][zoom<=9],
 #water_gen1[zoom>9][zoom<=12],
 #water[zoom>12] {
   line-color: @water;
@@ -163,10 +163,8 @@ Map { background-color: transparent; }
 
 #admin[admin_level='2'][zoom>1] {
   line-color:@admin_2;
-  line-width:0.5;
-  [zoom=2] { line-opacity: 0.25; }
-  [zoom=3] { line-opacity: 0.3; }
-  [zoom=4] { line-opacity: 0.4; }
+  line-width:1;
+  line-dasharray: 10, 3, 2, 3;
 }
 
 /* ================================================================== */
