@@ -5,15 +5,9 @@
 /* At lower zoomlevels, just show major automobile routes: motorways
 and trunks. */
 
-#roads_low[zoom>=5][zoom<=8] {
+#roads_low[zoom>=7][zoom<=8] {
   [type='motorway'] { line-color: @motorway_line; }
   [type='trunk'] { line-color: @trunk_line; }
-  [zoom=5] {
-    [type='motorway'] { line-width: 0.4; }
-    [type='trunk'] { line-width: 0.2; } }
-  [zoom=6] {
-    [type='motorway'] { line-width: 0.5; }
-    [type='trunk'] { line-width: 0.25; } }
   [zoom=7] {
     [type='motorway'] { line-width: 0.6; }
     [type='trunk'] { line-width: 0.3; } }

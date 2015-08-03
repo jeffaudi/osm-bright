@@ -10,14 +10,14 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-#land-low[zoom>=0][zoom<10],
+#land-low[zoom>=7][zoom<10],
 #land-high[zoom>=10] {
   line-color: @land;
   polygon-opacity: 0;
   polygon-gamma: 0.75;
 }
 
-#landuse_gen0[zoom>3][zoom<=9],
+#landuse_gen0[zoom>7][zoom<=9],
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
   [type='cemetery']      { polygon-opacity: 0; line-color: @cemetery; }
