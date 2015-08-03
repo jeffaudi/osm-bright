@@ -45,7 +45,7 @@
   }
 }
 
-#place::state[type='state'][zoom>=5][zoom<=10] {
+#place::state[type='state'][zoom>=6][zoom<=10] {
   text-name:'[name]';
   text-face-name:@sans_bold_italic;
   text-placement:point;
