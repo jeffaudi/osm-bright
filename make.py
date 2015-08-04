@@ -29,15 +29,15 @@ def clean():
   for f in glob("build/*.html"): unlink(f)
 
 def build():
-  #copy the osm-bright tree to a build dir
-  copy_tree("osm-bright", "build")
+  #copy the osm-hybrid tree to a build dir
+  copy_tree("osm-hybrid", "build")
 
   #remove the mml templates
   for f in glob("build/*.mml"):
     unlink(f)
 
   #load the project template
-  templatefile = open(join('osm-bright', 'osm-bright.%s.mml' % config["importer"]))
+  templatefile = open(join('osm-hybrid', 'osm-hybrid.%s.mml' % config["importer"]))
   template = loads(templatefile.read())
 
   #fill in the project template
@@ -69,13 +69,13 @@ def install():
   copy_tree("build", output_dir)
 
 def pull():
-  #copy the project from mapbox to osm-bright
+  #copy the project from mapbox to osm-hybrid
   sanitized_name = re.sub("[^\w]", "", config["name"])
   output_dir = join(config["path"], sanitized_name)
-  copy_tree(output_dir, "osm-bright", ("layers", ".thumb.png"))
+  copy_tree(output_dir, "osm-hybrid", ("layers", ".thumb.png"))
 
   #load the project file
-  project = loads(open(join("osm-bright", "project.mml")).read())
+  project = loads(open(join("osm-hybrid", "project.mml")).read())
 
   #Make sure we reset postgis data in the project file back to its default values
   defaultconfig = defaultdict(defaultdict)
@@ -85,7 +85,7 @@ def pull():
   defaultconfig["postgis"]["user"]     = ""
   defaultconfig["postgis"]["password"] = ""
   defaultconfig["postgis"]["extent"] = "-20037508.34 -20037508.34 20037508.34 20037508.34"
-  defaultconfig["name"] = "OSM Bright"
+  defaultconfig["name"] = "OSM Hybrid"
   defaultconfig["land-high"] = "http://data.openstreetmapdata.com/land-polygons-split-3857.zip"
   defaultconfig["land-low"] = "http://data.openstreetmapdata.com/simplified-land-polygons-complete-3857.zip"
 
@@ -103,11 +103,11 @@ def pull():
         elif opt in layer["Datasource"]:
           del layer["Datasource"][opt]
 
-  project_template = open(join("osm-bright", "osm-bright.%s.mml") % config["importer"], 'w')
+  project_template = open(join("osm-hybrid", "osm-hybrid.%s.mml") % config["importer"], 'w')
   project_template.write(dumps(project, sort_keys=True, indent=2))
 
   #now delete project.mml
-  unlink(join("osm-bright", "project.mml"))
+  unlink(join("osm-hybrid", "project.mml"))
 
 if __name__ == "__main__":
   if sys.argv[-1] == "clean":
