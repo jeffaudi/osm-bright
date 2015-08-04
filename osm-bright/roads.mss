@@ -6,14 +6,8 @@
 and trunks. */
 
 #roads_low[zoom>=7][zoom<=8] {
-  [type='motorway'] { line-color: @motorway_line; }
-  [type='trunk'] { line-color: @trunk_line; }
-  [zoom=7] {
-    [type='motorway'] { line-width: 0.6; }
-    [type='trunk'] { line-width: 0.3; } }
-  [zoom=8] {
-    [type='motorway'] { line-width: 1; }
-    [type='trunk'] { line-width: 0.5; } }
+  [type='motorway'] { line-color: @motorway_line; line-width: 1; }
+  [type='trunk'] { line-color: @trunk_line; line-width: 0.5; }
 }
 
 /* At mid-level scales start to show primary and secondary routes
