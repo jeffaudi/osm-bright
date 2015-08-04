@@ -144,13 +144,13 @@ Map { font-directory: url(./fonts); }
 @state_text:        #546;
 @state_halo:        @place_halo;
 
-@city_text:         #444;
+@city_text:         #888;
 @city_halo:         @place_halo;
 
 @town_text:         #666;
 @town_halo:         @place_halo;
 
-@poi_text:          #888;
+@poi_text:          #999;
 
 @road_text:         #777;
 @road_halo:         #fff;
