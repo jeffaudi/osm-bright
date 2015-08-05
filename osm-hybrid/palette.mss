@@ -145,8 +145,8 @@ Map { font-directory: url(./fonts); }
 
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
-@place_halo:        fadeout(#fff,15%);
-@place_halo_rev:    fadeout(#fff,85%);
+@place_halo:        fadeout(#fff,30%);
+@place_halo_rev:    fadeout(#000,30%);
 
 @country_text:      #435;
 @country_halo:      @place_halo;
