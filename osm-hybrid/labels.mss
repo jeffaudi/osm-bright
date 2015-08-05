@@ -156,7 +156,7 @@
   [zoom>=13]{
     text-size:18;
     text-transform: uppercase;
-    text-character-spacing: 8;
+    text-character-spacing: 1;
     text-line-spacing: 2;
   }
   [zoom>=14]{
@@ -271,11 +271,11 @@
   [zoom>=18][area>=0] {
     text-name: "[name]";
     text-halo-radius: 1.5;
-    text-face-name:@sans;
+    text-face-name:@sans_italic;
     text-size: 11;
     text-wrap-width:30;
-    text-fill: #f00;
-    text-halo-fill: #fff;
+    text-fill: @area_halo;
+    text-halo-fill: @area_halo;
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
       text-face-name: @sans_lt_italic;
