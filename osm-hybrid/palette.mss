@@ -163,7 +163,7 @@ Map { font-directory: url(./fonts); }
 
 @poi_text:          #aaa;
 
-@road_text:         #777;
+@road_text:         #333;
 @road_halo:         #fff;
 
 @other_text:        @place_text;
