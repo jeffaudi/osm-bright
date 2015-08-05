@@ -131,11 +131,14 @@ Map { background-color: transparent; }
 }
 #admin[admin_level='3'][zoom>2] {
   line-color:@admin_3;
+  line-opacity:  50%;
+  line-dasharray: 10, 3, 2, 3;
   line-width:1;
 }
 #admin[admin_level='4'][zoom>5] {
   line-color:@admin_4;
-  line-width:1;
+  line-dasharray: 10, 4;
+  line-width:0.5;
 }
 
 /* ================================================================== */
