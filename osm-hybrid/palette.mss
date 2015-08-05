@@ -146,26 +146,26 @@ Map { font-directory: url(./fonts); }
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
 @place_halo:        fadeout(#fff,30%);
-@place_halo_rev:    fadeout(#000,30%);
+@place_halo:        fadeout(#000,30%);
 
-@country_text:      #435;
+@country_text:      #eee;
 @country_halo:      @place_halo;
 
-@state_text:        #546;
+@state_text:        #eee;
 @state_halo:        @place_halo;
 
 @city_text:         #eee;
-@city_halo:         @place_halo_rev;
+@city_halo:         @place_halo;
 
-@town_text:         #444;
+@town_text:         #ccc;
 @town_halo:         @place_halo;
 
-@poi_text:          #666;
+@poi_text:          #aaa;
 
 @road_text:         #777;
 @road_halo:         #fff;
 
-@other_text:        #888;
+@other_text:        #aaa;
 @other_halo:        @place_halo;
 
 @locality_text:     #aaa;
