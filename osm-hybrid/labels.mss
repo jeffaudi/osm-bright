@@ -82,17 +82,13 @@
 
 /* ---- Cities ------------------------------------------------------ */
 
-#place::city[type='city'][zoom>=8][zoom<=15] {
+#place::city[type='city'][zoom>=9][zoom<=15] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
   text-fill:@city_text;
   text-halo-fill:@city_halo;
   text-halo-radius:2;
-  [zoom<=8] {
-    text-size: 11;
-    text-halo-radius:2;
-  }
   [zoom=9] {
     text-size:12;
     text-wrap-width: 60;
@@ -274,7 +270,7 @@
     text-face-name:@sans_italic;
     text-size: 11;
     text-wrap-width:30;
-    text-fill: @area_halo;
+    text-fill: @area_text;
     text-halo-fill: @area_halo;
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
