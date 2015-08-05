@@ -147,7 +147,7 @@ Map { font-directory: url(./fonts); }
 @place_text:        #fff;
 @place_halo:        fadeout(#000,30%);
 @area_text:         #90c;
-@area_halo:        fadeout(#000,30%);
+@area_halo:         fadeout(#fff,30%);
 
 @country_text:      @place_text;
 @country_halo:      @place_halo;
