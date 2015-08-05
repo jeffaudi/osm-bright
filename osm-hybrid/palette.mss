@@ -165,14 +165,14 @@ Map { font-directory: url(./fonts); }
 @road_text:         #777;
 @road_halo:         #fff;
 
-@other_text:        #aaa;
+@other_text:        @place_text;
 @other_halo:        @place_halo;
 
-@locality_text:     #aaa;
-@locality_halo:     @land;
+@locality_text:     #f00;
+@locality_halo:     #fff;
 
 /* Also used for other small places: hamlets, suburbs, localities */
-@village_text:      #60f;
+@village_text:      @place_text;
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */
