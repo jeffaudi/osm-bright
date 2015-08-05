@@ -275,29 +275,29 @@
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
       text-face-name: @sans_lt_italic;
-      text-fill: @park * 0.6;
+      text-fill: darken(@park, 70%);
       text-halo-fill: lighten(@park, 10);
     }
     [type='golf_course'][zoom>=10] {
-      text-fill: @sports * 0.6;
+      text-fill: darken(@sports, 70%);
       text-halo-fill: lighten(@sports, 10);
     }
     [type='cemetery'][zoom>=10] {
-      text-fill: @cemetery * 0.6;
+      text-fill: darken(@cemetery, 70%);
       text-halo-fill: lighten(@cemetery, 10);
     }
     [type='hospital'][zoom>=10] {
-      text-fill: @hospital * 0.6;
+      text-fill: darken(@hospital, 70%);
       text-halo-fill: lighten(@hospital, 10);
     }
     [type='college'][zoom>=10],
     [type='school'][zoom>=10],
     [type='university'][zoom>=10] {
-      text-fill: @school * 0.6;
+      text-fill: darken(@school, 70%);
       text-halo-fill: lighten(@school, 10);
     }
     [type='water'][zoom>=10] {
-      text-fill: @water * 0.6;
+      text-fill: darken(@water, 70%);
       text-halo-fill: lighten(@water, 10);
     }
   }
@@ -347,7 +347,7 @@
 #waterway_label[type='stream'][zoom>=17] {
   text-name: '[name]';
   text-face-name: @sans_italic;
-  text-fill: @water * 0.75;
+  text-fill: darken(@water, 70%);
   text-halo-fill: fadeout(lighten(@water,5%),25%);
   text-halo-radius: 1;
   text-placement: line;
