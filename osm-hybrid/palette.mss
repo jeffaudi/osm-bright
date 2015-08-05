@@ -21,33 +21,40 @@
 Map { font-directory: url(./fonts); }
 
 /* set up font sets for various weights and styles */
-@sans_lt:           "Open Sans Regular", "DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular", "Khmer OS Metal Chrieng Regular",
-                	"Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal",
-                	"Droid Sans Fallback Regular", "Unifont Medium", "unifont Medium";
+@sans_lt:	"Open Sans Regular", "DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular", 
+		"Khmer OS Metal Chrieng Regular", "Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular",
+		"Tibetan Machine Uni Regular", "Mallige Normal", "Droid Sans Fallback Regular", "Unifont Medium",
+		"unifont Medium";
 
-@sans_lt_italic:    "Open Sans Italic", "DejaVu Sans Italic", "DejaVu Sans Oblique", "Arundina Sans Italic", "TSCu_Paranar Italic", "Mallige NormalItalic",
-                	"DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular", "Khmer OS Metal Chrieng Regular",
-                	"Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal",
-                	"Droid Sans Fallback Regular", "Unifont Medium", "unifont Medium";
+@sans:		"Open Sans Semibold", "DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular",
+		"Khmer OS Metal Chrieng Regular", "Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular",
+		"Tibetan Machine Uni Regular", "Mallige Normal", "Droid Sans Fallback Regular", "Unifont Medium",
+		"unifont Medium";
 
-@sans:              "Open Sans Semibold", "DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular", "Khmer OS Metal Chrieng Regular",
-                	"Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal",
-                	"Droid Sans Fallback Regular", "Unifont Medium", "unifont Medium";
+@sans_italic:	"Open Sans Semibold Italic", "DejaVu Sans Italic", "DejaVu Sans Oblique", "Arundina Sans Italic",
+		"TSCu_Paranar Italic", "Mallige NormalItalic", "DejaVu Sans Book", "Arundina Sans Regular",
+		"Padauk Regular", "Khmer OS Metal Chrieng Regular", "Mukti Narrow Regular", "gargi Medium",
+		"TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal", "Droid Sans Fallback Regular",
+		"Unifont Medium", "unifont Medium";
 
-@sans_italic:       "Open Sans Semibold Italic", "DejaVu Sans Italic", "DejaVu Sans Oblique", "Arundina Sans Italic", "TSCu_Paranar Italic", "Mallige NormalItalic",
-                	"DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular", "Khmer OS Metal Chrieng Regular",
-                	"Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal",
-                	"Droid Sans Fallback Regular", "Unifont Medium", "unifont Medium";
+@sans_bold:	"Open Sans Bold", "DejaVu Sans Bold", "DejaVu Sans Bold", "Arundina Sans Bold", "Padauk Bold", 
+		"Mukti Narrow Bold", "TSCu_Paranar Bold", "Mallige Bold", "DejaVu Sans Book", "Arundina Sans Regular",
+		"Padauk Regular", "Khmer OS Metal Chrieng Regular","Mukti Narrow Regular", "gargi Medium",
+		"TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal", "Droid Sans Fallback Regular",
+		"Unifont Medium", "unifont Medium"; 
 
-@sans_bold:         "Open Sans Bold", "DejaVu Sans Bold", "DejaVu Sans Bold", "Arundina Sans Bold", "Padauk Bold", "Mukti Narrow Bold", "TSCu_Paranar Bold",
-					"Mallige Bold", "DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular", "Khmer OS Metal Chrieng Regular",
-                	"Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal",
-                	"Droid Sans Fallback Regular", "Unifont Medium", "unifont Medium";
 
-@sans_bold_italic:  "Open Sans Bold Italic", "DejaVu Sans Bold Italic", "DejaVu Sans Bold", "Arundina Sans Bold", "Padauk Bold", "Mukti Narrow Bold",
-					"TSCu_Paranar Bold", "Mallige Bold", "DejaVu Sans Book", "Arundina Sans Regular", "Padauk Regular", "Khmer OS Metal Chrieng Regular",
-                	"Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal",
-                	"Droid Sans Fallback Regular", "Unifont Medium", "unifont Medium";
+@sans_lt_italic:	"Open Sans Italic", "DejaVu Sans Italic", "DejaVu Sans Oblique", "Arundina Sans Italic",
+			"TSCu_Paranar Italic", "Mallige NormalItalic", "DejaVu Sans Book", "Arundina Sans Regular",
+			"Padauk Regular", "Khmer OS Metal Chrieng Regular", "Mukti Narrow Regular", "gargi Medium",
+			"TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal",
+			"Droid Sans Fallback Regular", "Unifont Medium", "unifont Medium";
+
+@sans_bold_italic:	"Open Sans Bold Italic", "DejaVu Sans Bold Italic", "DejaVu Sans Bold", "Arundina Sans Bold",
+			"Padauk Bold", "Mukti Narrow Bold", "TSCu_Paranar Bold", "Mallige Bold", "DejaVu Sans Book",
+			"Arundina Sans Regular", "Padauk Regular", "Khmer OS Metal Chrieng Regular",
+                	"Mukti Narrow Regular", "gargi Medium", "TSCu_Paranar Regular", "Tibetan Machine Uni Regular",
+                	"Mallige Normal", "Droid Sans Fallback Regular", "Unifont Medium", "unifont Medium";
 
 /* Some fonts are larger or smaller than others. Use this variable to
    globally increase or decrease the font sizes. */
@@ -129,6 +136,8 @@ Map { font-directory: url(./fonts); }
 /* ================================================================== */
 
 @admin_2:           #eee;
+@admin_3:           #999;
+@admin_4:           #60f;
 
 /* ================================================================== */
 /* LABEL COLORS
@@ -137,6 +146,7 @@ Map { font-directory: url(./fonts); }
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
 @place_halo:        fadeout(#fff,15%);
+@place_halo_rev:    fadeout(#fff,85%);
 
 @country_text:      #435;
 @country_halo:      @place_halo;
@@ -144,8 +154,8 @@ Map { font-directory: url(./fonts); }
 @state_text:        #546;
 @state_halo:        @place_halo;
 
-@city_text:         #333;
-@city_halo:         @place_halo;
+@city_text:         #eee;
+@city_halo:         @place_halo_rev;
 
 @town_text:         #444;
 @town_halo:         @place_halo;
@@ -162,7 +172,7 @@ Map { font-directory: url(./fonts); }
 @locality_halo:     @land;
 
 /* Also used for other small places: hamlets, suburbs, localities */
-@village_text:      #888;
+@village_text:      #60f;
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */
