@@ -43,7 +43,6 @@ Map { font-directory: url(./fonts); }
 		"TSCu_Paranar Regular", "Tibetan Machine Uni Regular", "Mallige Normal", "Droid Sans Fallback Regular",
 		"Unifont Medium", "unifont Medium"; 
 
-
 @sans_lt_italic:	"Open Sans Italic", "DejaVu Sans Italic", "DejaVu Sans Oblique", "Arundina Sans Italic",
 			"TSCu_Paranar Italic", "Mallige NormalItalic", "DejaVu Sans Book", "Arundina Sans Regular",
 			"Padauk Regular", "Khmer OS Metal Chrieng Regular", "Mukti Narrow Regular", "gargi Medium",
@@ -147,6 +146,8 @@ Map { font-directory: url(./fonts); }
    at once or override each individually. */
 @place_text:        #fff;
 @place_halo:        fadeout(#000,30%);
+@area_text:         #90c;
+@area_halo:        fadeout(#000,30%);
 
 @country_text:      @place_text;
 @country_halo:      @place_halo;
@@ -165,8 +166,8 @@ Map { font-directory: url(./fonts); }
 @road_text:         #777;
 @road_halo:         #fff;
 
-@other_text:        @place_text;
-@other_halo:        @place_halo;
+@other_text:        @area_text;
+@other_halo:        @area_halo;
 
 /* Name of localities */
 @locality_text:     #90c;
