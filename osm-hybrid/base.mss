@@ -129,6 +129,14 @@ Map { background-color: transparent; }
   line-color:@admin_2;
   line-width:1;
 }
+#admin[admin_level='3'][zoom>2] {
+  line-color:@admin_3;
+  line-width:1;
+}
+#admin[admin_level='4'][zoom>5] {
+  line-color:@admin_4;
+  line-width:1;
+}
 
 /* ================================================================== */
 /* BARRIER POINTS
