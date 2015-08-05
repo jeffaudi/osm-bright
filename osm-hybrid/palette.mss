@@ -168,8 +168,9 @@ Map { font-directory: url(./fonts); }
 @other_text:        @place_text;
 @other_halo:        @place_halo;
 
-@locality_text:     #f00;
-@locality_halo:     #fff;
+/* Name of localities */
+@locality_text:     #90c;
+@locality_halo:     @place_halo;
 
 /* Also used for other small places: hamlets, suburbs, localities */
 @village_text:      @place_text;
