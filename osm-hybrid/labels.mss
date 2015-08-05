@@ -187,7 +187,7 @@
   text-face-name:@sans;
   text-placement:point;
   text-fill:@other_text;
-  text-size:10;
+  text-size:12;
   text-halo-fill:@other_halo;
   text-halo-radius:1;
   text-wrap-width: 30;
