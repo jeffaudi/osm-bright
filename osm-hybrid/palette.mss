@@ -136,7 +136,7 @@ Map { font-directory: url(./fonts); }
 
 @admin_2:           #eee;
 @admin_3:           #999;
-@admin_4:           #60f;
+@admin_4:           #606;
 
 /* ================================================================== */
 /* LABEL COLORS
@@ -146,7 +146,7 @@ Map { font-directory: url(./fonts); }
    at once or override each individually. */
 @place_text:        #fff;
 @place_halo:        fadeout(#000,30%);
-@area_text:         #90c;
+@area_text:         #606;
 @area_halo:         fadeout(#fff,30%);
 
 @country_text:      @place_text;
@@ -166,11 +166,10 @@ Map { font-directory: url(./fonts); }
 @road_text:         #777;
 @road_halo:         #fff;
 
-@other_text:        @area_text;
-@other_halo:        @area_halo;
+@other_text:        @place_text;
+@other_halo:        @place_halo;
 
-/* Name of localities */
-@locality_text:     #90c;
+@locality_text:     @place_text;
 @locality_halo:     @place_halo;
 
 /* Also used for other small places: hamlets, suburbs, localities */
