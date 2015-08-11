@@ -257,8 +257,7 @@
 
 #area_label {
   // Bring in labels gradually as one zooms in, bases on polygon area
-  [zoom>=10][area>102400000],
-  [zoom>=11][area>25600000],
+  [zoom>=12][area>25600000],
   [zoom>=13][area>1600000],
   [zoom>=14][area>320000],
   [zoom>=15][area>80000],
