@@ -48,8 +48,8 @@ come in as well.
 @rdz14_maj: 4;   @rdz14_med: 2.5; @rdz14_min: 1.6;
 @rdz15_maj: 6;   @rdz15_med: 4;   @rdz15_min: 2;
 @rdz16_maj: 8;   @rdz16_med: 6;   @rdz16_min: 4;
-@rdz17_maj: 14;  @rdz17_med: 12;  @rdz17_min: 10;
-@rdz18_maj: 20;  @rdz18_med: 17;  @rdz18_min: 14;
+@rdz17_maj: 12;  @rdz17_med: 10;  @rdz17_min: 8;
+@rdz18_maj: 14;  @rdz18_med: 12;  @rdz18_min: 10;
 
 /* ---- Casing ----------------------------------------------- */
 
