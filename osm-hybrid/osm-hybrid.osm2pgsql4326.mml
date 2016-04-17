@@ -25,7 +25,7 @@
       "geometry": "polygon", 
       "id": "land-high", 
       "name": "land-high", 
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs", 
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +units=degrees +no_defs", 
       "srs-name": "4326",
       "status": "on"
     }, 
@@ -543,10 +543,10 @@
   ], 
   "attribution": "Data \u00a9 OpenStreetMap (and) contributors, ODbL",
   "bounds": [
-    -180, 
-    -85.0511, 
-    180, 
-    85.0511
+    -20037508.3428, 
+    -10018754.1714, 
+    20037508.3428, 
+    10018754.1714
   ], 
   "center": [
     0, 
@@ -559,5 +559,5 @@
   "maxzoom": 18, 
   "minzoom": 0, 
   "name": "OSM Hybrid", 
-  "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+  "srs": "+proj=eqc +lat_ts=0 +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"
 }

@@ -30,6 +30,7 @@ config["postgis"]["password"] = "osm"
 # whole world is "-20037508.34 -20037508.34 20037508.34 20037508.34".
 # Leave blank to let Mapnik estimate.
 config["postgis"]["extent"] = "-20037508.34,-20037508.34,20037508.34,20037508.34"
+#config["postgis"]["extent"] = "-180,-90,180,90"
 
 # Land shapefiles required for the style. If you have already downloaded
 # these or wish to use different versions, specify their paths here.
@@ -40,4 +41,6 @@ config["postgis"]["extent"] = "-20037508.34,-20037508.34,20037508.34,20037508.34
 
 config["land-high"] = path.join(getcwd(),"../shp/land-polygons-split-3857/land_polygons.shp")
 config["land-low"] = path.join(getcwd(),"../shp/simplified-land-polygons-complete-3857/simplified_land_polygons.shp")
+#config["land-high"] = path.join(getcwd(),"../shp/land-polygons-split-4326/land_polygons.shp")
+#config["land-low"] = path.join(getcwd(),"../shp/simplified-land-polygons-complete-3857/simplified_land_polygons.shp")
 
